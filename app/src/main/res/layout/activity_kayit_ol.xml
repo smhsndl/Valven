@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/kaydol"
+    tools:context=".KayitOl"
+    android:gravity="center">
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="600dp"
+        android:padding="10dp"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="0.11">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp">
+                <EditText
+                    android:id="@+id/isim"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:ems="10"
+                    android:hint="İsiminizi giriniz."
+                    android:textColor="#000000"
+                    android:textColorHint="#aeaeae"
+                    android:inputType="textPersonName"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="0.11">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp">
+                <EditText
+                    android:id="@+id/soyisim"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:ems="10"
+                    android:hint="Soyisminizi giriniz."
+                    android:textColor="#000000"
+                    android:textColorHint="#aeaeae"
+                    android:inputType="textPersonName"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="0.11">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp">
+                <EditText
+                    android:id="@+id/dogumtarihi"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="#000000"
+                    android:textColorHint="#aeaeae"
+                    android:background="@color/white"
+                    android:ems="10"
+                    android:hint="Doğum tarihinizi giriniz."
+                    android:inputType="date" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="0.11">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp">
+                <EditText
+                    android:id="@+id/telefon"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="#000000"
+                    android:textColorHint="#aeaeae"
+                    android:background="@color/white"
+                    android:ems="10"
+                    android:hint="Telefon numaranızı giriniz."
+                    android:inputType="phone"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="0.11">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp">
+                <EditText
+                    android:id="@+id/mail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="#000000"
+                    android:textColorHint="#aeaeae"
+                    android:background="@color/white"
+                    android:ems="10"
+                    android:hint="E-posta adresinizi giriniz."
+                    android:inputType="textEmailAddress"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="0.11">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp">
+                <EditText
+                    android:id="@+id/kimlikno_kayit"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="#000000"
+                    android:textColorHint="#aeaeae"
+                    android:background="@color/white"
+                    android:ems="10"
+                    android:hint="Kimlik numaranızı giriniz."
+                    android:inputType="number"
+                    android:maxLength="11" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="0.11">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp">
+                <RadioGroup
+                    android:id="@+id/sa"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbDoktor"
+                        android:layout_width="match_parent"
+                        android:textColor="#000000"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:text="Doktor" />
+
+                    <RadioButton
+                        android:id="@+id/rbHasta"
+                        android:layout_width="match_parent"
+                        android:textColor="#000000"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:text="Hasta" />
+                </RadioGroup>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="0.11">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp">
+                <EditText
+                    android:id="@+id/sifre_kayit"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="#000000"
+                    android:textColorHint="#aeaeae"
+                    android:background="@color/white"
+                    android:ems="10"
+                    android:hint="Şifrenizi giriniz."
+                    android:inputType="textPassword"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="0.12">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp">
+                <Button
+                    android:id="@+id/kayitOl_kayit"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Kayıt ol"
+                    android:backgroundTint="#ffffff"
+                    android:textColor="#000000"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
